@@ -2,6 +2,8 @@
 
 Simulation of a simplified Tetris game running on Arduino.
 
+![Tetris preview](preview.gif)
+
 ## Components 
 
 - Arduino Uno
