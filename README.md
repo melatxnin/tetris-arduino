@@ -1,6 +1,6 @@
 # Arduino Tetris (WOKWI)
 
-Simulation of a simplified Tetris game running on Arduino.
+A simplified Tetris game running on Arduino.
 
 <img src="preview.gif" width="500">
 
