@@ -2,7 +2,7 @@
 
 Simulation of a simplified Tetris game running on Arduino.
 
-![Tetris preview](preview.gif)
+<img src="preview.gif" width="500">
 
 ## Components 
 
