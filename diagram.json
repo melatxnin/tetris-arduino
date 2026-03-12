@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "author": "Nicolas GOSSARD",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb2", "top": 93, "left": 281.2, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 96.6, "left": -10.2, "attrs": {} },
+    {
+      "type": "wokwi-led-matrix",
+      "id": "matrix1",
+      "top": -291.8,
+      "left": 328,
+      "attrs": { "rows": "15", "cols": "10", "pixelShape": "square" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 153,
+      "left": 310.2,
+      "rotate": 90,
+      "attrs": { "color": "grey", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 153,
+      "left": 377.4,
+      "rotate": 90,
+      "attrs": { "color": "grey", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 153,
+      "left": 444.6,
+      "rotate": 90,
+      "attrs": { "color": "grey", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": 153,
+      "left": 511.8,
+      "rotate": 90,
+      "attrs": { "color": "grey", "xray": "1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": 115.2,
+      "left": 403.2,
+      "attrs": { "text": "🔄" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": 115.2,
+      "left": 470.4,
+      "attrs": { "text": "⏬️" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": 115.2,
+      "left": 537.6,
+      "attrs": { "text": "➡️" }
+    },
+    { "type": "wokwi-text", "id": "text4", "top": 115.2, "left": 336, "attrs": { "text": "⬅️" } }
+  ],
+  "connections": [
+    [ "btn1:2.r", "bb2:bn.3", "blue", [ "v0" ] ],
+    [ "btn2:2.r", "bb2:bn.9", "blue", [ "v0" ] ],
+    [ "btn3:1.r", "bb2:bn.16", "blue", [ "v0" ] ],
+    [ "btn4:1.r", "bb2:bn.22", "blue", [ "v0" ] ],
+    [ "matrix1:VDD", "uno:5V", "red", [ "v9.6", "h-461.2", "v230.4", "h169" ] ],
+    [ "matrix1:DIN", "uno:2", "black", [ "h-244.1" ] ],
+    [ "btn1:1.r", "uno:A5", "gray", [ "v96.2", "h-109.9" ] ],
+    [ "btn2:1.r", "uno:A4", "gray", [ "v105.8", "h-186.6" ] ],
+    [ "btn3:2.r", "uno:A3", "gray", [ "v115.4", "h-244.3" ] ],
+    [ "btn4:2.r", "uno:A2", "gray", [ "v125", "h-321" ] ],
+    [ "uno:GND.2", "bb2:bn.1", "blue", [ "v19.1", "h51.9", "v38.4", "h142.4" ] ],
+    [ "matrix1:VSS", "bb2:bn.24", "blue", [ "v9.6", "h172", "v230.4", "h-49.6" ] ],
+    [ "btn1:1.l", "bb2:6t.a", "", [ "$bb" ] ],
+    [ "btn1:2.l", "bb2:4t.a", "", [ "$bb" ] ],
+    [ "btn1:1.r", "bb2:6b.f", "", [ "$bb" ] ],
+    [ "btn1:2.r", "bb2:4b.f", "", [ "$bb" ] ],
+    [ "btn2:1.l", "bb2:13t.a", "", [ "$bb" ] ],
+    [ "btn2:2.l", "bb2:11t.a", "", [ "$bb" ] ],
+    [ "btn2:1.r", "bb2:13b.f", "", [ "$bb" ] ],
+    [ "btn2:2.r", "bb2:11b.f", "", [ "$bb" ] ],
+    [ "btn3:1.l", "bb2:20t.a", "", [ "$bb" ] ],
+    [ "btn3:2.l", "bb2:18t.a", "", [ "$bb" ] ],
+    [ "btn3:1.r", "bb2:20b.f", "", [ "$bb" ] ],
+    [ "btn3:2.r", "bb2:18b.f", "", [ "$bb" ] ],
+    [ "btn4:1.l", "bb2:27t.a", "", [ "$bb" ] ],
+    [ "btn4:2.l", "bb2:25t.a", "", [ "$bb" ] ],
+    [ "btn4:1.r", "bb2:27b.f", "", [ "$bb" ] ],
+    [ "btn4:2.r", "bb2:25b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
