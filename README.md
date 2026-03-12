@@ -7,6 +7,7 @@ Simulation of a simplified Tetris game running on Arduino.
 ## Components 
 
 - Arduino Uno
+- Half Breadboard
 - LED Matrix (WS2812 / NeoPixel)
 - Pushbutton (4)
 
