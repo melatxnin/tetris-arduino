@@ -1,6 +1,6 @@
-# Arduino Tetris (WOKWI)
+# Tetris Game - Arduino (Wokwi)
 
-A simplified Tetris game running on Arduino.
+A classic falling-block puzzle built with Arduino.
 
 <img src="preview.gif" width="500">
 
